@@ -1,13 +1,15 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import { DashBoardHeader, DashBoardSideBar } from '../../blocks'
 import DashboardHeader from '../../blocks/dashboardheader/DashboardHeader'
+import { DashBoardSideBar } from '../../blocks/dashboardsidebar'
+
+
 
 const DashBoardLayout = () => {
   return (
     <div style={{display: "flex", justifyContent: "center", alignItems:"center"}}>
 
-    <DashBoardHeader />
+    <DashboardHeader />
 
     <div style={{display: "flex"}} >
         <DashBoardSideBar />
