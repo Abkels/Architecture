@@ -10,8 +10,6 @@ import NotFound from "../utils/hoc/NotFound";
 const Home = lazy(() => import("../pages/Home"));
 const About = lazy(() => import("../pages/About"));
 
-const DashBoardHome = lazy(() => import("../pages/DashBoardHomePage"));
-
 export const element = createBrowserRouter([
 	{
 		path: "/",
