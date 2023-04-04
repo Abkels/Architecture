@@ -1,8 +1,6 @@
 import React, { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import { HomeLayout } from "../components";
-import DashBoardLayout from "../components/layout/dashboardlayout/DashBoardLayout";
-import DashBoardHomePage from "../pages/DashBoardHomePage";
 // import { Home } from "../pages";
 import { ErrorBoundary, fetchDictionary } from "../utils";
 import NotFound from "../utils/hoc/NotFound";
@@ -36,17 +34,4 @@ export const element = createBrowserRouter([
 		path: "*",
 		element: <NotFound />,
 	},
-
-	{
-		path: "/dashboard",
-		element: <DashBoardLayout />,
-		children: [
-			{
-				index: true,
-				element: <DashBoardHomePage />,
-				hasErrorBoundary: true,
-				errorElement: <ErrorBoundary />
-			}
-		]
-	}
 ]);
